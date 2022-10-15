@@ -1,0 +1,161 @@
+.database-container{
+    display : flex;
+    flex-wrap : wrap;
+
+    align-self: center;
+
+    align-content:center;
+    justify-content : center;
+
+    position: relative;
+    height: 36rem;
+    width: 100%;
+    padding: 3rem 2rem;
+    color: #001e2b;
+}
+
+
+.partA {
+    display : flex;
+    flex-wrap : wrap;
+    align-items : center;
+
+    flex-direction: row;
+    position: absolute;
+
+    color: #ec4535;
+    
+    
+    border-top-right-radius: 10rem;
+    border-bottom-right-radius: 10rem;
+    width: 45%;
+    margin-right:  auto;
+
+    background: radial-gradient(46.15% 106.11% at 62.67% 30.5%,rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.5) 100%);
+}
+
+.partA img {
+    max-width: 100%;
+    min-width: 15rem;
+    height: auto;
+
+}
+
+.oracle{
+    display: flex;
+    flex-wrap : wrap;
+    align-items: center;
+  
+    position: relative;
+    /* background-color: #00ed64; */
+    height: 45rem;
+    
+}
+  
+.oracle-logo {
+  
+    position: relative;
+    display : flex;
+    align-self: center;
+    align-items : center;
+    justify-content : center;
+    flex-wrap : wrap;
+    flex-direction : column;
+  
+    height : 25rem; 
+    width : 25rem;
+  
+    left: 5rem;
+     
+    background-color : #dc2023; /* #00684a; */
+    color: #ffff;
+  
+    border-radius : 80px;
+  
+    z-index: 2;
+  
+}
+  
+.oracle-support {
+    
+    position: relative;
+    display : flex;
+    align-self: center;
+    align-items : flex-start;
+    justify-content : center;
+    flex-wrap : wrap;
+    flex-direction : column;
+  
+    /* text-align: center; */
+  
+    height : 30rem;
+    width : 50rem;
+      
+    background-color : #F9F9F9;
+    color: #023430;
+  
+    border-radius : 120px; 
+    box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.5);  /* box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1); */
+  
+    z-index: 1;
+  
+    left: -2.5rem;
+    
+    bottom: -10rem;
+}
+  
+.oracle .oracle-logo:hover{
+    background-color: #16a085;
+    color: #dc2023;
+}
+  
+.oracle .oracle-logo:hover .oracle-support{
+    background-color: #dc2023;
+    color: #ffff;
+}
+
+
+
+
+/*Media Queries*/
+/*medium Devices  -->  tablets */
+@media (max-width: 990px) {
+
+    .partA{
+        top: 0rem;
+        margin-right: 0rem;
+        border-top-right-radius: 0rem;
+        border-bottom-right-radius: 0rem;
+        width: 70vw;
+    }
+
+}
+
+
+/*Media Queries*/
+/*Small Devices  -->  phones */
+@media (max-width: 640px) {
+
+    .oracle {
+        left: 0rem;
+    }
+
+    .oracle-logo {
+        left: 0rem;
+        height : 12.5rem; 
+        width : 25rem;
+        bottom: -2rem;
+    }
+       
+    .oracle-support {
+         
+        left: 0rem;
+        margin-block-start: -6.5rem;
+        text-align: center;
+        width: 32rem;
+        height : 25rem;
+        bottom: 2rem; 
+       
+    }
+
+}
