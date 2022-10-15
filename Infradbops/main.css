@@ -1,0 +1,310 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing : border-box;
+    outline: none;
+}
+
+
+/*Variables*/
+:root {
+    --screensize: 100vw;
+    --card-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+    --light-white: #fff6eb;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+.head {
+    display : flex;
+    flex-wrap : wrap;
+    flex-direction: row;
+    align-self: start;
+    align-content: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    width: 100%;
+    height: 4rem;
+    padding: 0rem 1.5rem;                       /* padding: (top + bottom)px (left + right)px; */
+    background-color: #ffffff;         
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+    z-index: 100;
+}
+
+.headlogo {
+    padding: 0.75rem 0rem;
+}
+
+.headlogo img {
+    height: 2.5rem;
+}
+
+.headrow {
+    display: flex;
+    flex-wrap : wrap;
+    flex-direction: row;
+    align-content:center;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items:center;
+    padding: 0rem 0rem;  
+    text-align: center;                         
+}
+
+
+
+.intro {
+    display : flex;
+    flex-wrap : wrap;
+
+    align-self:center;
+    
+    align-content: center;
+    justify-content :center;
+    align-items : center;  
+
+    position: relative;
+    /* top:4rem; for header adjudtment */
+    height: 32rem;
+    width: 100%;
+    padding: 3rem 2rem;
+    color: #ffffff;
+    
+       
+    /* background-color: cadetblue; */
+    
+    /* background: radial-gradient(46.15% 106.11% at 62.67% 30.5%,rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.5) 100%); */
+    background-image: linear-gradient(45deg, rgba(12, 183, 103, 0.84), rgb(22, 96, 161));
+
+}
+
+
+
+.opening {
+    display : flex;
+    flex-wrap : wrap;
+    flex-direction:row-reverse;
+
+    align-self : center;
+    margin-left: auto;
+    margin-right: auto;
+
+    align-content: center;
+    justify-content: center;
+
+    position: absolute;
+
+}
+
+
+
+.opening-image {
+    width: 40%;
+    max-height: 25rem;
+    min-height: 15rem;
+}
+
+.opening-content {
+    display : flex;
+    flex-wrap : wrap;
+    flex-direction:column;
+
+    align-self:center;
+    margin-right: 4rem;
+    width: 40%;
+}
+
+.opening-content h3{
+    display : flex;
+    flex-wrap : wrap;
+
+    margin-top: 0px;
+    margin-bottom: 1rem;
+    color: #1f1235;
+    font-size: 3.5rem;
+    line-height: 1.15;
+    font-weight: 700;
+
+    font-family: 'Comfortaa', cursive;
+}
+
+.opening-content p{
+    display : flex;
+    flex-wrap : wrap;
+
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: normal;
+    font-family: 'Comfortaa', cursive;
+    color: #000000;
+    padding: 0.5rem 0rem;
+}
+
+
+.footed {
+    display : flex;
+    flex-wrap : wrap;
+
+    align-self:flex-end ;
+    
+    align-content: center; ;
+    justify-content: center;
+
+    margin: 0rem;
+
+    width: 100%;
+    height: 24rem;
+    padding: 0rem 1.5rem;                       /* padding: (top + bottom)px (left + right)px; */
+    background-color: #061621;         
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.774);   
+}
+
+.sub-footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+
+    position: relative;
+    height: 12rem;
+
+    border: 0.0625rem solid #ffff;
+    border-radius: 1rem;
+    background-color: #00684a;
+
+}
+
+.sub-footer h4 {
+    font-family:  aileron, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.sub-footer p {
+    font-family:  ubuntu;
+    font-size: 1rem;
+}
+
+/* ############################ Headrow missing ################################## */
+
+
+
+/*Media Queries*/
+/*medium Devices  -->  tablets */
+
+@media (max-width: 990px) {
+
+    .opening{
+        flex-direction: column;  
+    }
+
+    .opening-image{
+        margin-left: auto;
+        margin-right: auto;
+        width: 50vw;
+    }
+
+    .opening-content{
+        margin-right: 0rem;
+        width: 100vw;
+        padding: 0rem 2rem;
+    }
+
+    .opening-content h3{
+        font-size: 3rem;
+    }
+    
+    .opening-content p{
+        font-weight: 500;
+        font-size:100%;
+    }
+ 
+}
+
+
+
+/*Media Queries*/
+/*Small Devices  -->  phones */
+@media (max-width: 640px) {
+
+    .head {
+        padding: 0rem 0rem;
+    }
+
+    .headlogo {
+        padding: 0.75rem 1rem;
+    }
+    
+    .headlogo img {
+        height: 2.5rem;
+    }
+
+
+    .headrow {
+        display: none;
+    }
+
+    .headrow.show {
+        width: 90%;
+        min-height: 57vh;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 1%;
+        left: 2%;
+        background: #FFF;
+        justify-content: flex-start;
+        box-shadow: 1px 1px 20px rgb(0 0 0 / 20%);
+        border-radius: 0.5rem;
+        padding-top: 1rem;
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        transition-property: opacity, transform, -webkit-transform;
+        -webkit-transform-origin: top right;
+        transform-origin: top right;
+        transform: scale(1);
+        opacity: 1;
+        padding: 0.75rem;
+        z-index: 1;
+    }
+
+    .headrow.show > a, .headrow.show > div.dropdown {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .headrow.show div.dropdown-content {
+        box-shadow: none !important;
+        min-width: auto !important;
+        position: relative !important;
+        font-size: 1rem !important;
+        font-weight: 600 !important;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .opening{
+        
+    }
+
+    .opening-image{
+        
+    }
+
+    .opening-content{
+
+        padding: 0rem 2rem;
+       
+    }
+
+}
+
+
+
