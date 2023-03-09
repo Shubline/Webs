@@ -1,0 +1,131 @@
+
+.interrective-cards{
+  display : flex;
+  flex-wrap : wrap;
+  flex-direction: row;
+
+  align-self:center;
+
+  align-content:center;
+  justify-content : center;
+  
+  /* align-items : center;
+  justify-items: center; */
+
+  position : relative;
+  
+  background-color: transparent;
+  padding: 4rem 0rem;                       /* padding: (top + bottom)px (left + right)px; */
+  margin: 0rem;
+ 
+}
+
+.card {
+  display : flex;
+  flex-wrap : wrap;
+  flex-direction: column;
+
+  align-self: center;
+
+  /* align-content: center;
+  justify-content : center; */
+  
+  /* align-items : center;
+  justify-items: center; */
+
+  position: relative;
+  width : 18rem;
+  height : 32rem;  
+  
+  background-color : #f9ebff; color: #13294b;
+  border-radius : 15px; 
+  border: 1px solid transparent;
+  box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.5);  /* box-shadow : 0.5px 0.5px 0.5px 0.5px #023430 ; */
+  text-align : center; 
+  margin: .5rem;
+}
+
+.card-logo {
+  display : flex;
+  flex-wrap : wrap;
+  align-self: center;
+
+  display: inline-block;
+  background-color : transparent ;
+}
+
+.card-logo-back {
+  display : flex;
+  flex-wrap : wrap;
+  position: absolute;
+  right: 35%;
+  display: none;
+  z-index: 1;
+}
+
+.card:hover .card-logo-back {
+  display: inline;
+  background-color : #47d7ac ;
+}
+
+.card-heading h3 {
+  font-weight: 400;
+  font-size: 200%;
+  font-family: 'Comfortaa', cursive;
+  color: rgb(0, 0, 0);
+}
+
+.card-content {
+  display : flex;
+  flex-wrap : wrap;
+  position: relative;
+  font-weight: 100;
+  font-size: 100%;
+  font-family: 'Comfortaa', cursive;
+  color: rgb(0, 0, 0);
+  padding: 1rem 0.25rem;                       /* padding: (top + bottom)px (left + right)px; */
+  background-color: transparent;
+
+  text-align: center;
+
+  align-self: center;
+  /* margin-top: auto;
+  margin-bottom: auto; */
+}
+
+.card .explore {
+  position : absolute;
+  text-align: center;
+  align-self: center;
+  bottom: 8px;
+  color: #001e1d;
+  background-color: #47d7ac;
+  padding: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-radius: 8px;
+ 
+}
+
+.white{
+  color: #ffff;
+}
+
+.card:hover {
+  background-color : #47d7ac ;  /* #00AC41 */
+  color : #001e1d;
+  border: 1px solid black;
+}
+
+.card:hover .explore {
+  background-color : #ffff ;
+ color: #00ed64 ;
+}
+
+.card:hover .white{
+  color: #00ed64 ;
+}
+
+@media (max-width: 640px){
+
+}
