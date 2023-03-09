@@ -108,7 +108,7 @@ body {
     min-width: 50%;
     
     max-height: 100%;
-    min-height: 75%;
+    min-height: 50%;
 }
 
 .opening-content {
@@ -177,7 +177,7 @@ body {
 
     position: relative;
     height: 33vh;
-    padding: 1rem 1.5rem;                       /* padding: (top + bottom)px (left + right)px; */
+    padding: 1rem 1rem;                       /* padding: (top + bottom)px (left + right)px; */
 
     border: 0.0625rem solid #ffff;
     border-radius: 1rem;
@@ -319,28 +319,38 @@ body {
 
     .opening-content{
         
+        
     }
 
-
-
-
+    .opening-content h3{
+        font-size: 2rem;
+    }
+    
+    .opening-content p{
+        font-weight: 500;
+        font-size:100%;
+    }
 
 
     .footed {
-        height: 80vh;
+        height: 100vh;
+        padding: 0.5rem 0.25rem;                       /* padding: (top + bottom)px (left + right)px; */
+        align-content: space-between;
     }
     
     .sub-footer{
-        height: 50vh;
+        height: 75vh;
         
     }
     
     .sub-footer h4 {
-        
+        font-size: 1rem;
+        font-weight: 800;
     }
     
     .sub-footer p {
-        
+        font-size: 1rem;
+        font-weight: 400;
     }
 }
 
