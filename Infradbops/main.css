@@ -334,13 +334,13 @@ body {
 
     .footed {
         height: 100vh;
-        padding: 0.5rem 0.25rem;                       /* padding: (top + bottom)px (left + right)px; */
-        align-content: space-between;
+        padding: 1rem 0.5rem;                       /* padding: (top + bottom)px (left + right)px; */
+        
     }
     
     .sub-footer{
         height: 60vh;
-        
+        align-content: space-evenly;
     }
     
     .sub-footer h4 {
