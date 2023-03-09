@@ -17,7 +17,7 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
-/* ################################  Header Starting #########################################*/
+/* ################################  Header CSS Starting #########################################*/
 
 .head {
     display : flex;
@@ -57,12 +57,8 @@ body {
     text-align: center;                         
 }
 
-/* ################################  Header Ending #########################################*/
+/* ################################  Header CSS Ending #########################################*/
 
-/* .img{
-    max-width: 100%;
-    max-height: 100%;
-} */
 
 .space{
     display: flex;
@@ -83,11 +79,11 @@ body {
 
     position: relative;
     /* top:4rem; for header adjudtment, Now it is done by space class*/
-    height: 90vh;
+    height: 32rem;
     width: 100%;
     padding: 0rem 0rem;
     
-    background-color: #ffff;
+    background-color: #ffffff;
     z-index: 1;
     
 }
@@ -107,8 +103,12 @@ body {
     position: absolute;
 }
 
-.opening-image img{
+.opening img{
+    max-width: 100%;
+    min-width: 50%;
     
+    max-height: 100%;
+    min-height: 75%;
 }
 
 .opening-content {
@@ -119,7 +119,6 @@ body {
     align-self:center;
     margin-right: 4rem;
     width: 40%;
-    
 }
 
 .opening-content h3{
@@ -205,23 +204,18 @@ body {
 @media (max-width: 990px) {
 
     .intro {
-        
+        height: 44rem;
     }
 
     .opening{
-        flex-direction: column;
-    }
-
-    .opening img{
-        height: 50%;
-        align-self: center;
-        margin-left: auto;
-        margin-right: auto;
+    
     }
 
     .opening-content{
+        height: 50%;
+        width: 100%;
+
         margin-right: 0rem;
-        width: 100vw;
         padding: 0rem 2rem;
     }
 
@@ -310,15 +304,17 @@ body {
     }
     
     .intro {
-    
+        height: 48rem;
     }
     
-    .opening{
+    .opening {
         
     }
 
-    .opening-image img{
-        
+    .opening img {
+        align-self : center;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .opening-content{
